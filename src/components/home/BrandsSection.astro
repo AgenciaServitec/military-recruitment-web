@@ -1,0 +1,92 @@
+---
+import { isEmpty } from "lodash-es";
+const { list = undefined } = Astro.props;
+---
+
+<div class="brands-wrapper">
+  <div class="brands-wrapper__container">
+    <ul class="brands-list">
+      {
+        !isEmpty(list) &&
+          list.map((brands, index) => (
+            <li key={index} class="brands-list__item">
+              <img
+                src={brands.imageUrl}
+                alt={brands.name}
+                width="150"
+                height="100"
+              />
+            </li>
+          ))
+      }
+    </ul>
+  </div>
+  <div class="brands-wrapper__container">
+    <ul class="brands-list">
+      {
+        !isEmpty(list) &&
+          list.map((brands, index) => (
+            <li key={index} class="brands-list__item">
+              <img
+                src={brands.imageUrl}
+                alt={brands.name}
+                width="150"
+                height="100"
+              />
+            </li>
+          ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style lang="scss">
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .brands-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.4em 0;
+
+    &:hover .brands-list {
+      animation-play-state: paused;
+    }
+
+    &__container {
+      display: inline-block;
+      margin-left: 1em;
+    }
+  }
+
+  .brands-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+    max-width: 100%;
+    animation: 30s slide infinite linear;
+
+    &__item {
+      background: #fff;
+      box-shadow: 0 0 10px #e8eaeb;
+      border-radius: 1em;
+      padding: 0.2em 1em;
+      display: flex;
+      place-items: center;
+
+      img {
+        width: 8em;
+        margin: auto;
+        object-fit: contain;
+      }
+    }
+  }
+</style>

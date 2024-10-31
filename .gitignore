@@ -1,0 +1,14 @@
+/node_modules
+# Local Netlify folder
+.netlify
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/proyectores-landing.iml
+/.idea/vcs.xml
+/.idea/prettier.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
+/.idea/workspace.xml
+/build
+/dist

@@ -1,0 +1,88 @@
+---
+import { IconItem, Divider } from "../components";
+import { LT_SETTINGS } from "../data-list";
+
+const { FOOTER, PROJECT } = LT_SETTINGS;
+---
+
+<footer class="footer">
+  <Divider />
+
+  <img src={PROJECT.logo} alt="logo" width="90" height="100" />
+
+  <span class="slogan-description">
+    {PROJECT.slogan}
+  </span>
+
+  <section class="icons-list">
+    {
+      FOOTER.CONTACT_DATA?.items.map((item, index) => (
+        <IconItem
+          key={index}
+          path={item.path}
+          title={item.title}
+          description={item.description}
+        />
+      ))
+    }
+  </section>
+
+  <div class="footer__bottom">
+    <p data-astro-cid-mtxgg6pp="">
+      Copyrights © 2024 Servicio Proyectores | Todos los derechos reservados -
+      Desarrollado por <span>Agencia Servitec</span>
+    </p>
+  </div>
+</footer>
+
+<style lang="scss">
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+    background: #2b2b2b;
+
+    img {
+      width: 17em;
+      margin: 1.2em auto;
+    }
+
+    .slogan-description {
+      text-align: center;
+      color: #ffffff8c;
+      padding: 1em;
+    }
+
+    .icons-list {
+      padding: 2em 1.5em;
+      gap: 1em;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(12em, auto));
+      width: 100%;
+    }
+
+    &__bottom {
+      background: #000;
+      width: 100%;
+      padding: 1em;
+
+      p {
+        text-align: center;
+        font-size: 0.9em;
+
+        span {
+          color: #09757a;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 500px) {
+    footer {
+      .slogan-description {
+        max-width: 50%;
+      }
+    }
+  }
+</style>

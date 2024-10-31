@@ -1,0 +1,62 @@
+---
+import CardProduct from "../ui/CardProduct.astro";
+import { isEmpty } from "lodash-es";
+const { data } = Astro.props;
+---
+
+<section>
+  <div class="wrapper-title">
+    {!isEmpty(data.title) && <h2 class="color__primary">{data.title}</h2>}
+  </div>
+  <div class="card-list">
+    {
+      data.list.map((product, index) => (
+        <CardProduct
+          key={index}
+          imagePath={product.imgUrl}
+          imageAlt={product.name}
+          name={product.name}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    padding: 2em 1em;
+    background-color: #e8eaeb;
+
+    .wrapper-title {
+      width: 70%;
+      margin: auto;
+      @media (max-width: 576px) {
+        width: 97%;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        line-height: 1;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-bottom: 1em;
+        color: #000;
+        @media (max-width: 576px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .card-list {
+      margin: auto;
+      width: 100%;
+      max-width: 1280px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1em;
+      justify-content: center;
+      padding: 1em;
+    }
+  }
+</style>
