@@ -1,8 +1,6 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 import Footer from "./Footer.astro";
 import Header from "./Header.astro";
-import { ButtonFloating } from "../components";
 import { LT_SETTINGS } from "../data-list";
 
 interface Props {
@@ -12,7 +10,7 @@ interface Props {
 
 const { PROJECT } = LT_SETTINGS;
 
-const { title = PROJECT.name, googleTag } = Astro.props;
+const { title = PROJECT.name } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,29 +25,6 @@ const { title = PROJECT.name, googleTag } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="./favicon.webp" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-16646516021"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-16646516021");
-    </script>
-
-    {googleTag && (
-      //Event snippet for Vista de página conversion page
-    <script>
-      gtag("event", "conversion", {
-        send_to: "AW-16646516021/ChjVCIGNhsYZELXa1oE-",
-      });
-    </script>)}
-    
   </head>
   <body>
     <div class="general-wrapper">
@@ -57,7 +32,6 @@ const { title = PROJECT.name, googleTag } = Astro.props;
       <div class="main">
         <slot />
       </div>
-      <ButtonFloating />
       <Footer />
     </div>
     <style is:global lang="scss">
@@ -71,7 +45,7 @@ const { title = PROJECT.name, googleTag } = Astro.props;
         font-family: system-ui, sans-serif;
         // background: rgb(5, 5, 5);
         background: #fff;
-        color: #fff;
+        color: black;
       }
 
       body {
@@ -109,6 +83,10 @@ const { title = PROJECT.name, googleTag } = Astro.props;
         &__black {
           color: #000;
         }
+      }
+
+      p {
+        display: flex;
       }
     </style>
   </body><!--<GLOBAL STYLES>-->

@@ -1,0 +1,99 @@
+---
+import { LT_BODY } from "../../data-list/LT_BODY";
+const { REQUIREMENTS } = LT_BODY;
+
+const requirementsList = REQUIREMENTS.list;
+---
+
+<section class="requirements-section">
+  <div class="requirements-title">
+    <h2 style="text-transform: uppercase; font-size: 2.5em">
+      {REQUIREMENTS.title}
+    </h2>
+    <p style="font-size: 1.2em">{REQUIREMENTS.description}</p>
+  </div>
+  <div class="content">
+    <div class="requirements-indications">
+      <div class="requirements-description">
+        <img
+          src={REQUIREMENTS.image.imageUrl}
+          alt={REQUIREMENTS.imageAlt}
+          style="transform: scaleX(-1)"
+          width="250"
+          height="350"
+        />
+      </div>
+    </div>
+    <img
+      src={REQUIREMENTS.imageArrow.imageUrl}
+      alt={REQUIREMENTS.imageArrow.imageAlt}
+      width="200"
+      height="150"
+    />
+    <div class="requirements-list">
+      <ul>
+        {
+          requirementsList.map((requirements) => (
+            <li>{requirements.description}</li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .requirements-section {
+    margin: auto;
+    width: 80%;
+    gap: 2em;
+
+    .requirements-title {
+      gap: 1.2em;
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em 0;
+      gap: 3em;
+      .requirements-indications {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        width: 45%;
+        padding-left: 2.5em;
+
+        .requirements-description {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5em;
+          margin-left: 5em;
+        }
+      }
+
+      .requirements-list {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.2em;
+          font-size: 1.1em;
+          font-weight: 600;
+
+          li::marker {
+            color: #4f6228;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+</style>

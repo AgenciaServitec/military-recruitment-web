@@ -2,8 +2,8 @@ export const LT_BODY = {
   PRINCIPAL_SECTION: {
     type: "banner",
     banner: {
-      bannerImgUrl: "/images/banner.png",
-      bannerImgAlt: "Proyectores Servicio Proyectores",
+      bannerImgUrl: "/images/banner.jpeg",
+      bannerImgAlt: "Ejército del Perú",
     },
     carousel: {
       images: [
@@ -14,110 +14,107 @@ export const LT_BODY = {
       ],
     },
   },
-  ABOUT_US: {
-    title: "sobre nosotros",
-    description:
-      "Nos dedicamos a transformar la manera en que experimentas el entretenimiento y las presentaciones visuales. Desde nuestros comienzos, hemos tenido una misión clara: proporcionar soluciones de proyección de alta calidad que se adapten a las necesidades de nuestros clientes, ya sea en el hogar, la oficina, o cualquier otro entorno.",
-    imgUrl: "/images/about-us.webp",
-    imgAlt: "Sobre nosotros",
-  },
-  SEO_SECTION: {
-    title: "Venta de lámparas de alta calidad",
-    description:
-      "Ofrecemos lámparas de proyectores de alta calidad y larga duración. Compatibles con varias marcas, con precios competitivos y envío rápido. Mejore su proyección con nuestro soporte especializado.",
+  ARMY_ENVIRONMENT: {
+    title: "ambiente",
+    description: "El servir a la patria etc etc...",
     image: {
-      imageUrl: "/images/about-us.webp",
-      imageAlt: "Proyector proyectando una pelicula en una sala.",
+      imageUrl: "/images/military.jpg",
+      imageAlt: "Beneficios",
     },
   },
-  SERVICES: {
-    title: "Algunos de nuestros servicios",
+  REQUIREMENTS: {
+    title: "requerimientos",
+    description:
+      "Para aplicar solo necesitas cumplir con los siguientes requisitos: ",
+    imageArrow: {
+      imageUrl: "../../public/images/requirements/arrow-right.webp",
+      imageAlt: "Flecha Derecha",
+    },
+    image: {
+      imageUrl: "../../public/images/requirements/soldado.webp",
+      imageAlt: "Requerimientos",
+    },
     list: [
       {
-        imgUrl: "/images/services/imagen-borrosa.webp",
-        name: "Imagen borrosa.",
+        description: "Tener entre 18 y 30 años de edad.",
       },
       {
-        imgUrl: "/images/services/imagen-con-puntos.webp",
-        name: "Imagen con puntos.",
+        description: "DNI (original y copia).",
       },
       {
-        imgUrl: "/images/services/imagen-distorsionada.webp",
-        name: "Imagen distorsionada.",
+        description:
+          "Constancia de Inscripción Militar o Libreta Militar (clases anteriores).",
       },
       {
-        imgUrl: "/images/services/mensaje-sin-senial.webp",
-        name: "Imagen de mensaje sin señal.",
+        description:
+          "Tener como mínimo primaria completa, presentando copia simple del certificado.",
       },
       {
-        imgUrl: "/images/services/proyector-se-sobrecalienta.webp",
-        name: "Imagen de proyector se sobrecalienta.",
+        description:
+          "Presentar una declaración jurada simple de soltería y mantener esa situación hasta finalizar el Servicio Militar.",
       },
       {
-        imgUrl: "./images/services/apaga-y-reinicia.webp",
-        name: "Imagen de se apara y reinicia un proyector.",
+        description:
+          "Declaración jurada simple de no registrar antecedentes policiales, penales ni judiciales.",
+      },
+      {
+        description:
+          "Declaración jurada manifestando tu voluntad de prestar Servicio Militar Acuartelado, acatando la Ley, el Reglamento y disposiciones de la Institución Armada a la cual prestarás el Servicio Militar.",
+      },
+      {
+        description:
+          "Ser seleccionado y aprobar el examen de aptitud psicosomática en la Institución Armada que selecciones.",
       },
     ],
   },
-  PRODUCTS: {
-    title: "Lámparas",
+
+  BENEFITS: {
+    title: "beneficios",
+    description:
+      "El Servicio Militar Voluntario está amparado en la Ley 29248 y te permite ejercer tu derecho y deber constitucional como peruano de participar en la Defensa Nacional a través de la Marina de Guerra, Fuerza Aérea o Ejército del Perú. Puedes hacer el Servicio Militar Voluntario si tienes entre 18 a 30 años de edad. Esto te será retribuido con una serie de beneficios y derechos para compensar tus necesidades y brindarte posibilidades de desarrollo personal. Estos son algunos de los derechos y beneficios a los que podrás acceder.",
     list: [
       {
-        imgUrl: "/images/products/bl-fp280c-optoma.webp",
-        name: "Proyector OPTOMA BL-FP280c",
+        imgUrl: "/images/benefits/alimentacion.jpeg",
+        items: [
+          {
+            description: "Alimentación diaria, tres veces al día.",
+          },
+          {
+            description: "Dotación completa de prendas.",
+          },
+          {
+            description:
+              "Asignación económica mensual, viáticos por comisión de servicio, seguro de vida.",
+          },
+          {
+            description:
+              "Acceso a prestaciones de salud en los sistemas de salud en los hospitales o establecimientos de salud de la institución a la que perteneces.",
+          },
+        ],
       },
       {
-        imgUrl: "/images/products/elplp71-epson.webp",
-        name: "Proyector SONY LMP-D213",
-      },
-      {
-        imgUrl: "/images/products/lmp-d213-sony.webp",
-        name: "Proyector EPSON ELPLP71",
+        imgUrl: "/images/benefits/escuela.jpg",
+        items: [
+          {
+            description:
+              "Instrucción militar, educación técnica productiva, ampliando tus posibilidades de inserción en el mercado laboral.",
+          },
+          {
+            description: "Facilidades para el ingreso a las Fuerzas Armadas.",
+          },
+          {
+            description:
+              "Descuentos de hasta 50% en museos, eventos deportivos y culturales.",
+          },
+          {
+            description:
+              "Facilidades después del primer año para realizar estudios en universidades o institutos en convenio con el programa Beca 18.",
+          },
+        ],
       },
     ],
   },
-  BRANDS: {
-    list: [
-      {
-        name: "BenQ",
-        imageUrl: "/images/brands/logo-benq.webp",
-      },
-      {
-        name: "Epson",
-        imageUrl: "/images/brands/logo-epson.webp",
-      },
-      {
-        name: "inFocus",
-        imageUrl: "/images/brands/logo-infocus.webp",
-      },
-      {
-        name: "LG",
-        imageUrl: "/images/brands/logo-lg.webp",
-      },
-      {
-        name: "Optoma",
-        imageUrl: "/images/brands/logo-optoma.webp",
-      },
-      {
-        name: "Sony",
-        imageUrl: "/images/brands/logo-sony.webp",
-      },
-      {
-        name: "Hitachi",
-        imageUrl: "/images/brands/logo-hitachi.webp",
-      },
-      {
-        name: "ViewSonic",
-        imageUrl: "/images/brands/logo-viewsonic.webp",
-      },
-      {
-        name: "Acer",
-        imageUrl: "/images/brands/logo-acer.webp",
-      },
-      {
-        name: "Panasonic",
-        imageUrl: "/images/brands/logo-panasonic.webp",
-      },
-    ],
+  POSTULATION: {
+    title: "postúlate aquí",
   },
 };

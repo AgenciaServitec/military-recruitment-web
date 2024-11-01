@@ -1,0 +1,76 @@
+---
+import { LT_BODY } from "../../data-list/LT_BODY";
+const { BENEFITS } = LT_BODY;
+const benefistList = BENEFITS.list;
+---
+
+<section class="benefits-section">
+  <div class="benefits-title">
+    <h2>{BENEFITS.title}</h2>
+  </div>
+  <div class="benefits-description">
+    <p>{BENEFITS.description}</p>
+  </div>
+  {
+    benefistList.map((benefits) => (
+      <div class="benefits-list">
+        <img alt="Benefit1" src={benefits.imgUrl} />
+        <div class="benefits-items">
+          <ul>
+            {benefits.items.map((item) => (
+              <li>{item.description}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ))
+  }
+</section>
+
+<style lang="scss">
+  .benefits-section {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    align-items: center;
+    .benefits-title {
+      text-transform: uppercase;
+      font-size: 1.6em;
+    }
+
+    .benefits-description {
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+    .benefits-list {
+      display: flex;
+      gap: 4em;
+
+      img {
+        width: 100%;
+        max-width: 30em;
+      }
+
+      .benefits-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.8em;
+          font-size: 1.1em;
+          font-weight: 600;
+
+          li::marker {
+            color: rgb(99 122 58);
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+</style>

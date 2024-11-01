@@ -1,14 +1,10 @@
 ---
 import { BaseLayout } from "../layouts";
 import { LT_SETTINGS } from "../data-list";
-import {
-  Services,
-  SectionWrapper,
-  CarouselMain,
-  ProductsSection,
-  SeoSection,
-} from "../components";
-import BrandsSection from "../components/home/BrandsSection.astro";
+import { SectionWrapper, CarouselMain } from "../components";
+import ApplySection from "../components/home/ApplySection.astro";
+import Benefits from "../components/home/Benefits.astro";
+import Requirements from "../components/home/Requirements.astro";
 
 const { BODY } = LT_SETTINGS;
 ---
@@ -32,17 +28,21 @@ const { BODY } = LT_SETTINGS;
       }
     </div>
 
-    <SectionWrapper>
-      <SeoSection data={BODY.SEO_SECTION} />
+    <SectionWrapper class="benefits-section">
+      <Benefits />
     </SectionWrapper>
 
-    {BODY.PRODUCTS.title && <ProductsSection data={BODY.PRODUCTS} />}
-
-    <Services title={BODY.SERVICES?.title} list={BODY.SERVICES?.list} />
-
-    <SectionWrapper>
-      <BrandsSection list={BODY.BRANDS.list} />
+    <SectionWrapper class="requirements-section">
+      <Requirements />
     </SectionWrapper>
+
+    <SectionWrapper class="apply-section">
+      <ApplySection />
+    </SectionWrapper>
+
+    <!--// {BODY.PRODUCTS.title && <ProductsSection data={BODY.PRODUCTS} />}-->
+
+    <!--<Services title={BODY.SERVICES?.title} list={BODY.SERVICES?.list} />-->
   </main>
 </BaseLayout>
 
@@ -63,26 +63,11 @@ const { BODY } = LT_SETTINGS;
         z-index: 100;
       }
 
-      .wrapper-content {
-        width: 90%;
-        margin: auto;
-        color: #fff;
-        text-transform: uppercase;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 200;
-        @media (min-width: 920px) {
-          width: 60%;
-        }
+      .quote-wrapper {
+        padding: 2em 0 0 0;
 
-        .quote-wrapper {
-          padding: 2em 0 0 0;
-
-          a {
-            text-decoration: auto;
-          }
+        a {
+          text-decoration: auto;
         }
       }
     }
@@ -91,10 +76,13 @@ const { BODY } = LT_SETTINGS;
   //DESKTOP
   @media (min-width: 920px) {
     main {
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
       .banner-wrapper {
         img {
           width: 100%;
-          height: 70vh;
+          height: 85vh;
         }
       }
     }
