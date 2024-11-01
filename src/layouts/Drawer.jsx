@@ -39,11 +39,11 @@ const Drawer = ({ children, dataNavbar }) => {
                 onHiddenDrawer={hiddenDrawer}
               />
             ))}
-            <ItemLi
-              text={dataNavbar.itemContact.label}
-              path={dataNavbar.itemContact.value}
-              onHiddenDrawer={hiddenDrawer}
-            />
+              {dataNavbar?.itemContact && <ItemLi
+                  text={dataNavbar.itemContact.label}
+                  path={dataNavbar.itemContact.value}
+                  onHiddenDrawer={hiddenDrawer}
+              />}
           </ul>
         </article>
       </section>

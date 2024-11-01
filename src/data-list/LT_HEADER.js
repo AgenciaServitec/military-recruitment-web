@@ -16,9 +16,5 @@ export const LT_HEADER = {
       label: "Services",
       value: "/services",
     },
-  ],
-  itemContact: {
-    label: "Contacto",
-    value: "/contact",
-  },
+  ]
 };

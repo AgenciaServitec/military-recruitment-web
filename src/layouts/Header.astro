@@ -53,18 +53,19 @@ const { HEADER } = LT_SETTINGS;
           </li>
         ))
       }
-      <li>
-        <a href={HEADER.itemContact.value} class="anchor-icon">
-          <Icon
-            pack="mdi"
-            name="phone"
-            size={19}
-            id="contacto"
-            aria-label="contacto"
-          />
-          {HEADER.itemContact.label}
-        </a>
-      </li>
+      {HEADER?.itemContact &&
+        <li>
+          <a href={HEADER.itemContact.value} class="anchor-icon">
+            <Icon
+                pack="mdi"
+                name="phone"
+                size={19}
+                id="contacto"
+                aria-label="contacto"
+            />
+            {HEADER.itemContact.label}
+          </a>
+        </li>}
     </ul>
   </div>
 </header>
