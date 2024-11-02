@@ -8,29 +8,16 @@ const { FOOTER, PROJECT } = LT_SETTINGS;
 <footer class="footer">
   <Divider />
 
-  <img src={PROJECT.logo} alt="logo" width="90" height="100" />
+  <img src={PROJECT.logo} alt="logo" width="90" height="90" />
 
   <span class="slogan-description">
     {PROJECT.slogan}
   </span>
 
-  <section class="icons-list">
-    {
-      FOOTER.CONTACT_DATA?.items.map((item, index) => (
-        <IconItem
-          key={index}
-          path={item.path}
-          title={item.title}
-          description={item.description}
-        />
-      ))
-    }
-  </section>
-
   <div class="footer__bottom">
-    <p data-astro-cid-mtxgg6pp="">
-      Copyrights © 2024 Servicio Proyectores | Todos los derechos reservados -
-      Desarrollado por <span>Agencia Servitec</span>
+    <p>
+      Copyrights © 2024 Servicio de Reclutamiento Militar | Todos los derechos
+      reservados - Desarrollado por : <span> Agencia Servitec</span>
     </p>
   </div>
 </footer>
@@ -44,7 +31,8 @@ const { FOOTER, PROJECT } = LT_SETTINGS;
     background: #2b2b2b;
 
     img {
-      width: 17em;
+      width: 8em;
+      height: auto;
       margin: 1.2em auto;
     }
 
@@ -52,6 +40,7 @@ const { FOOTER, PROJECT } = LT_SETTINGS;
       text-align: center;
       color: #ffffff8c;
       padding: 1em;
+      font-weight: 600;
     }
 
     .icons-list {
@@ -63,9 +52,12 @@ const { FOOTER, PROJECT } = LT_SETTINGS;
     }
 
     &__bottom {
+      display: flex;
+      justify-content: center;
       background: #000;
       width: 100%;
       padding: 1em;
+      color: white;
 
       p {
         text-align: center;
