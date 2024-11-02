@@ -129,6 +129,10 @@ const { BODY } = LT_SETTINGS;
       gap: 3em;
 
       .banner-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
         img {
           width: 100%;
           height: 90vh;
@@ -139,16 +143,21 @@ const { BODY } = LT_SETTINGS;
           position: absolute;
           color: white;
           z-index: 700;
-          display: flex;
-          flex-direction: column;
+          display: grid;
+          place-items: start;
           flex-wrap: wrap;
           width: 75%;
           gap: 2em;
           margin: 2em;
           padding-top: 4em;
 
+          h1 {
+            text-align: start;
+          }
+
           p {
             font-weight: 500;
+            text-align: start;
           }
 
           button {
