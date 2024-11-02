@@ -14,7 +14,9 @@ const benefistList = BENEFITS.list;
   {
     benefistList.map((benefits) => (
       <div class="benefits-list">
-        <img alt="Benefit1" src={benefits.imgUrl} />
+        <div class="benefits-img">
+          <img alt="Benefit1" src={benefits.imgUrl} />
+        </div>
         <div class="benefits-items">
           <ul>
             {benefits.items.map((item) => (
@@ -49,14 +51,18 @@ const benefistList = BENEFITS.list;
       gap: 1.2em;
       overflow: hidden;
       margin: 1em 0;
-      img {
-        max-width: 30em;
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease;
-      }
-      img:hover {
-        transform: scale(1.1);
+      .benefits-img {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 30em;
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease;
+        }
+        img:hover {
+          transform: scale(1.1);
+        }
       }
       .benefits-items {
         ul {
@@ -111,7 +117,7 @@ const benefistList = BENEFITS.list;
           ul {
             display: flex;
             flex-direction: column;
-            gap: 1.8em;
+            gap: 1.2em;
             font-size: 1.1em;
             font-weight: 600;
 

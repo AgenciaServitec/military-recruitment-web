@@ -32,7 +32,7 @@ const { BODY } = LT_SETTINGS;
           Únete al servicio militar y fortalece el futuro del Perú. Sirve a tu
           país, marca la diferencia.
         </p>
-        <button>¡postúlate aquí!</button>
+        <button id="apply-button">¡postúlate aquí!</button>
       </div>
       <div class="banner-bg"></div>
     </div>
@@ -53,6 +53,16 @@ const { BODY } = LT_SETTINGS;
   </main>
 </BaseLayout>
 
+<script>
+  const applyButtonElement = document.querySelector("#apply-button");
+
+  const applyMilitaryService = () => {
+    window.open("https://korekenke.mil.pe/military-service-recruitment/new");
+  };
+
+  applyButtonElement.addEventListener("click", applyMilitaryService);
+</script>
+
 <style lang="scss">
   //MOBILE AND TABLET
   main {
@@ -61,7 +71,7 @@ const { BODY } = LT_SETTINGS;
     .banner-wrapper {
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: center;
       position: relative;
       width: 100%;
       overflow: hidden;
@@ -80,7 +90,7 @@ const { BODY } = LT_SETTINGS;
         z-index: 700;
         display: grid;
         place-items: center;
-        width: 100%;
+        width: 90%;
         gap: 1em;
 
         h1 {
@@ -94,14 +104,15 @@ const { BODY } = LT_SETTINGS;
         button {
           padding: 1em;
           text-transform: uppercase;
-          font-size: 0.6em;
+          font-size: 0.8em;
           font-weight: 600;
           background: green;
           color: white;
           border: none;
           border-radius: 50px;
           cursor: pointer;
-          width: 40%;
+          width: 50%;
+          margin: 2em 0;
         }
       }
     }
