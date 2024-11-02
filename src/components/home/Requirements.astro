@@ -5,7 +5,7 @@ const { REQUIREMENTS } = LT_BODY;
 const requirementsList = REQUIREMENTS.list;
 ---
 
-<section class="requirements-section">
+<section class="requirements-section" id="requisitos">
   <div class="requirements-title">
     <h2 style="text-transform: uppercase; font-size: 2.5em">
       {REQUIREMENTS.title}
@@ -45,8 +45,12 @@ const requirementsList = REQUIREMENTS.list;
 <style lang="scss">
   .requirements-section {
     margin: auto;
-    width: 80%;
+    width: 90%;
     gap: 2em;
+    padding: 4em;
+    border-radius: 20px;
+    background-color: white;
+    /*box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.86);*/
 
     .requirements-title {
       gap: 1.2em;

@@ -4,7 +4,7 @@ const { BENEFITS } = LT_BODY;
 const benefistList = BENEFITS.list;
 ---
 
-<section class="benefits-section">
+<section class="benefits-section" id="beneficios">
   <div class="benefits-title">
     <h2>{BENEFITS.title}</h2>
   </div>
@@ -29,12 +29,17 @@ const benefistList = BENEFITS.list;
 
 <style lang="scss">
   .benefits-section {
+    border-radius: 20px;
     margin: auto;
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 2.5em;
     align-items: center;
+    padding: 4em;
+    background: white;
+    /*box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.86);*/
+
     .benefits-title {
       text-transform: uppercase;
       font-size: 1.6em;

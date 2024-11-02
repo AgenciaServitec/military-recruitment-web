@@ -115,6 +115,7 @@ export const LT_BODY = {
     ],
   },
   POSTULATION: {
-    title: "postúlate aquí",
+    title: "¡postúlate aquí!",
+    urlButton: "https://korekenke.mil.pe/military-service-recruitment/new",
   },
 };

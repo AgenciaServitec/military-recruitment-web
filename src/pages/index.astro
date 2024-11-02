@@ -11,7 +11,7 @@ const { BODY } = LT_SETTINGS;
 
 <BaseLayout>
   <main>
-    <div class="banner-wrapper">
+    <div class="banner-wrapper" id="/">
       {
         BODY.PRINCIPAL_SECTION.type === "banner"
           ? BODY.PRINCIPAL_SECTION?.banner && (
@@ -26,17 +26,26 @@ const { BODY } = LT_SETTINGS;
               <CarouselMain images={BODY.PRINCIPAL_SECTION?.carousel.images} />
             )
       }
+      <div class="text">
+        <h1>SERVICIO DE RECLUTAMIENTO MILITAR</h1>
+        <p>
+          Únete al servicio militar y fortalece el futuro del Perú. Sirve a tu
+          país, marca la diferencia.
+        </p>
+        <button>¡postúlate aquí!</button>
+      </div>
+      <div class="banner-bg"></div>
     </div>
 
-    <SectionWrapper class="benefits-section">
+    <SectionWrapper>
       <Benefits />
     </SectionWrapper>
 
-    <SectionWrapper class="requirements-section">
+    <SectionWrapper>
       <Requirements />
     </SectionWrapper>
 
-    <SectionWrapper class="apply-section">
+    <SectionWrapper>
       <ApplySection />
     </SectionWrapper>
 
@@ -52,7 +61,7 @@ const { BODY } = LT_SETTINGS;
     .banner-wrapper {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
       position: relative;
       width: 100%;
       height: 100%;
@@ -79,10 +88,65 @@ const { BODY } = LT_SETTINGS;
       display: flex;
       flex-direction: column;
       gap: 3em;
+
       .banner-wrapper {
         img {
           width: 100%;
           height: 85vh;
+        }
+
+        .text {
+          font-size: 1.8em;
+          position: absolute;
+          color: white;
+          z-index: 800;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 75%;
+          gap: 2em;
+          margin: 2em;
+          padding-top: 4em;
+
+          p {
+            font-weight: 500;
+          }
+
+          button {
+            padding: 0.7em;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: 600;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 30%;
+          }
+        }
+
+        .banner-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.640494) 0%,
+              black 0%,
+              rgba(255, 255, 255, 0) 57%
+            ),
+            linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.640494) 0%,
+              black 0%,
+              rgba(255, 255, 255, 0) 42%
+            );
+          z-index: 500;
+          width: 100%;
+          height: 100%;
         }
       }
     }

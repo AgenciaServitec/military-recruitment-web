@@ -6,15 +6,15 @@ export const LT_HEADER = {
   navbar: [
     {
       label: "Inicio",
-      value: "/",
+      value: "#/",
     },
     {
-      label: "Nosotros",
-      value: "/about-us",
+      label: "Beneficios",
+      value: "#beneficios",
     },
     {
-      label: "Services",
-      value: "/services",
+      label: "Requisitos",
+      value: "#requisitos",
     },
-  ]
+  ],
 };

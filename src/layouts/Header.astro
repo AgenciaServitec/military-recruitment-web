@@ -32,17 +32,6 @@ const { HEADER } = LT_SETTINGS;
         height="100"
       /></a
     >
-    <!--<Drawer client:visible dataNavbar={HEADER}>-->
-    <!--  <div class="item-menu-button">-->
-    <!--    <IconFontAwesome-->
-    <!--      width="30px"-->
-    <!--      color="#09757a"-->
-    <!--      path="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"-->
-    <!--      aria-label="menu"-->
-    <!--      id="menu"-->
-    <!--    />-->
-    <!--  </div>-->
-    <!--</Drawer>-->
   </div>
   <div class="item-menu">
     <ul>
@@ -52,22 +41,6 @@ const { HEADER } = LT_SETTINGS;
             <a href={item.value}>{item.label}</a>
           </li>
         ))
-      }
-      {
-        HEADER?.itemContact && (
-          <li>
-            <a href={HEADER.itemContact.value} class="anchor-icon">
-              <Icon
-                pack="mdi"
-                name="phone"
-                size={19}
-                id="contacto"
-                aria-label="contacto"
-              />
-              {HEADER.itemContact.label}
-            </a>
-          </li>
-        )
       }
     </ul>
   </div>
@@ -166,6 +139,18 @@ const { HEADER } = LT_SETTINGS;
     padding: 1em;
     backdrop-filter: blur(10px);
     animation: slideDown 0.35s ease-out;
+    height: 8%;
+
+    .img-logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 2em;
+        height: auto;
+        object-fit: contain;
+        margin: 0;
+      }
+    }
   }
 
   @keyframes slideDown {
