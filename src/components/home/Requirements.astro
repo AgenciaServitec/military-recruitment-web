@@ -43,58 +43,63 @@ const requirementsList = REQUIREMENTS.list;
 </section>
 
 <style lang="scss">
+  //MOBILE AND TABLET
   .requirements-section {
-    margin: auto;
-    width: 90%;
-    gap: 2em;
-    padding: 4em;
-    border-radius: 20px;
-    background-color: white;
-    /*box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.86);*/
+  }
+  //DESKTOP
+  @media (min-width: 920px) {
+    .requirements-section {
+      margin: auto;
+      width: 90%;
+      gap: 2em;
+      padding: 4em;
+      border-radius: 20px;
+      background-color: white;
 
-    .requirements-title {
-      gap: 1.2em;
-      width: 100%;
-      display: grid;
-      place-items: center;
-    }
-
-    .content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2em 0;
-      gap: 3em;
-      .requirements-indications {
-        display: flex;
-        flex-direction: column;
-        gap: 3em;
-        width: 45%;
-        padding-left: 2.5em;
-
-        .requirements-description {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1.5em;
-          margin-left: 5em;
-        }
+      .requirements-title {
+        gap: 1.2em;
+        width: 100%;
+        display: grid;
+        place-items: center;
       }
 
-      .requirements-list {
-        width: 45%;
+      .content {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        ul {
+        padding: 2em 0;
+        gap: 3em;
+        .requirements-indications {
           display: flex;
           flex-direction: column;
-          gap: 1.2em;
-          font-size: 1.1em;
-          font-weight: 600;
+          gap: 3em;
+          width: 45%;
+          padding-left: 2.5em;
 
-          li::marker {
-            color: #4f6228;
-            font-size: 1.2em;
+          .requirements-description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+            margin-left: 5em;
+          }
+        }
+
+        .requirements-list {
+          width: 45%;
+          display: flex;
+          align-items: center;
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2em;
+            font-size: 1.1em;
+            font-weight: 600;
+
+            li::marker {
+              color: #4f6228;
+              font-size: 1.2em;
+            }
           }
         }
       }
