@@ -30,23 +30,46 @@ const benefistList = BENEFITS.list;
 <style lang="scss">
   //MOBILE AND TABLET
   .benefits-section {
-    background: red;
     width: 90%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.2em;
+    font-weight: 500;
     .benefits-title {
       text-transform: uppercase;
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
     .benefits-description {
       font-size: 0.95em;
     }
     .benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2em;
+      overflow: hidden;
+      margin: 1em 0;
       img {
-        width: 20em;
+        max-width: 30em;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+      img:hover {
+        transform: scale(1.1);
       }
       .benefits-items {
+        ul {
+          display: flex;
+          flex-direction: column;
+          margin-left: 2em;
+          gap: 0.6em;
+
+          li::marker {
+            color: rgb(99 122 58);
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }
@@ -60,6 +83,7 @@ const benefistList = BENEFITS.list;
       gap: 2.5em;
       align-items: center;
       padding: 4em;
+      font-weight: 500;
 
       .benefits-title {
         text-transform: uppercase;
