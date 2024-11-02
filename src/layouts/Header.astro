@@ -74,7 +74,7 @@ const { HEADER } = LT_SETTINGS;
       background-color: transparent;
       position: absolute;
       top: 0;
-      z-index: 700;
+      z-index: 600;
       display: flex;
       justify-content: space-between;
       padding: 1rem 3rem;
@@ -131,12 +131,12 @@ const { HEADER } = LT_SETTINGS;
 
   .header-absolute.header-sticky {
     position: fixed;
-    z-index: 700;
+    z-index: 800;
     background-color: #2b2b2b;
-    padding: 1em;
     backdrop-filter: blur(10px);
     animation: slideDown 0.35s ease-out;
     height: 8%;
+    padding: 1rem 3rem;
 
     .img-logo {
       display: flex;
