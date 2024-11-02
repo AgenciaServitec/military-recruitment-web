@@ -67,6 +67,25 @@ const { HEADER } = LT_SETTINGS;
       display: none;
     }
   }
+  .header-absolute.header-sticky {
+    position: fixed;
+    z-index: 800;
+    background-color: #2b2b2b;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+
+    .img-logo {
+      display: flex;
+      align-items: center;
+      margin: 0 2em;
+      img {
+        width: 2.2em;
+        height: auto;
+        object-fit: contain;
+        margin: 0;
+      }
+    }
+  }
 
   //DESKTOP
   @media (min-width: 920px) {
@@ -127,25 +146,24 @@ const { HEADER } = LT_SETTINGS;
         }
       }
     }
-  }
+    .header-absolute.header-sticky {
+      position: fixed;
+      z-index: 800;
+      background-color: #2b2b2b;
+      backdrop-filter: blur(10px);
+      animation: slideDown 0.35s ease-out;
+      height: 8%;
+      padding: 1rem 3rem;
 
-  .header-absolute.header-sticky {
-    position: fixed;
-    z-index: 800;
-    background-color: #2b2b2b;
-    backdrop-filter: blur(10px);
-    animation: slideDown 0.35s ease-out;
-    height: 8%;
-    padding: 1rem 3rem;
-
-    .img-logo {
-      display: flex;
-      align-items: center;
-      img {
-        width: 2em;
-        height: auto;
-        object-fit: contain;
-        margin: 0;
+      .img-logo {
+        display: flex;
+        align-items: center;
+        img {
+          width: 2em;
+          height: auto;
+          object-fit: contain;
+          margin: 0;
+        }
       }
     }
   }
