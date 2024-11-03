@@ -17,7 +17,7 @@ const requirementsList = REQUIREMENTS.list;
       <div class="requirements-indications">
         <div class="requirements-description">
           <img
-            src={REQUIREMENTS.image.imageUrl}
+            src={REQUIREMENTS?.image?.imageUrl}
             alt={REQUIREMENTS.imageAlt}
             style="transform: scaleX(-1)"
             width="250"
@@ -25,13 +25,7 @@ const requirementsList = REQUIREMENTS.list;
           />
         </div>
       </div>
-      <img
-        class="arrow"
-        src={REQUIREMENTS.imageArrow.imageUrl}
-        alt={REQUIREMENTS.imageArrow.imageAlt}
-        width="200"
-        height="150"
-      />
+
       <div class="requirements-list">
         <ul>
           {

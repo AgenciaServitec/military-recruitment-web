@@ -1,46 +1,17 @@
 ---
 import { LT_BODY } from "../../data-list/LT_BODY";
+import ButtonApply from "../ui/ButtonApply.astro";
 const { POSTULATION } = LT_BODY;
 ---
 
 <section class="apply">
-  <button class="apply__button" id="apply-button">
-    <span class="text-button">{POSTULATION.title}</span>
-  </button>
+  <ButtonApply />
 </section>
 
-<script>
-  const applyButtonElement = document.querySelector("#apply-button");
-
-  const applyMilitaryService = () => {
-    window.open("https://korekenke.mil.pe/military-service-recruitment/new");
-  };
-
-  applyButtonElement.addEventListener("click", applyMilitaryService);
-</script>
-
-<style>
+<style lang="scss">
   .apply {
     display: flex;
     justify-content: center;
     padding: 4em 0;
-    button {
-      padding: 2em;
-      text-transform: uppercase;
-      font-size: 1em;
-      font-weight: 800;
-      background: green;
-      color: white;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-    }
-  }
-  @media (min-width: 920px) {
-    .apply {
-      button {
-        font-size: 1.3em;
-      }
-    }
   }
 </style>

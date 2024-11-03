@@ -26,12 +26,8 @@ export const LT_BODY = {
     title: "requerimientos",
     description:
       "Para aplicar solo necesitas cumplir con los siguientes requisitos: ",
-    imageArrow: {
-      imageUrl: "../../public/images/requirements/arrow-right.webp",
-      imageAlt: "Flecha Derecha",
-    },
     image: {
-      imageUrl: "../../public/images/requirements/soldado.webp",
+      imageUrl: "./images/requirements/soldado.webp",
       imageAlt: "Requerimientos",
     },
     list: [
