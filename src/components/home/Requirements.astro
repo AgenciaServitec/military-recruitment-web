@@ -6,39 +6,41 @@ const requirementsList = REQUIREMENTS.list;
 ---
 
 <section class="requirements-section" id="requisitos">
-  <div class="requirements-title">
-    <h2>
-      {REQUIREMENTS.title}
-    </h2>
-    <p style="font-size: 1.2em">{REQUIREMENTS.description}</p>
-  </div>
-  <div class="content">
-    <div class="requirements-indications">
-      <div class="requirements-description">
-        <img
-          src={REQUIREMENTS.image.imageUrl}
-          alt={REQUIREMENTS.imageAlt}
-          style="transform: scaleX(-1)"
-          width="250"
-          height="350"
-        />
-      </div>
+  <div class="requirements-content">
+    <div class="requirements-title">
+      <h2>
+        {REQUIREMENTS.title}
+      </h2>
+      <p style="font-size: 1.2em">{REQUIREMENTS.description}</p>
     </div>
-    <img
-      class="arrow"
-      src={REQUIREMENTS.imageArrow.imageUrl}
-      alt={REQUIREMENTS.imageArrow.imageAlt}
-      width="200"
-      height="150"
-    />
-    <div class="requirements-list">
-      <ul>
-        {
-          requirementsList.map((requirements) => (
-            <li>{requirements.description}</li>
-          ))
-        }
-      </ul>
+    <div class="content">
+      <div class="requirements-indications">
+        <div class="requirements-description">
+          <img
+            src={REQUIREMENTS.image.imageUrl}
+            alt={REQUIREMENTS.imageAlt}
+            style="transform: scaleX(-1)"
+            width="250"
+            height="350"
+          />
+        </div>
+      </div>
+      <img
+        class="arrow"
+        src={REQUIREMENTS.imageArrow.imageUrl}
+        alt={REQUIREMENTS.imageArrow.imageAlt}
+        width="200"
+        height="150"
+      />
+      <div class="requirements-list">
+        <ul>
+          {
+            requirementsList.map((requirements) => (
+              <li>{requirements.description}</li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -46,41 +48,49 @@ const requirementsList = REQUIREMENTS.list;
 <style lang="scss">
   //MOBILE AND TABLET
   .requirements-section {
-    width: 90%;
-    .requirements-title {
-      display: grid;
-      gap: 1.3em;
-      h2 {
-        text-align: center;
-        font-size: 2em;
-        text-transform: uppercase;
-      }
-    }
-    .content {
-      .requirements-indications {
-        .requirements-description {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 2.5em 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 4em 0;
+    background-color: rgb(79 98 40);
+    color: white;
+    .requirements-content {
+      width: 90%;
+      .requirements-title {
+        display: grid;
+        gap: 1.3em;
+        h2 {
+          text-align: center;
+          font-size: 2em;
+          text-transform: uppercase;
         }
       }
+      .content {
+        .requirements-indications {
+          .requirements-description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2.5em 0;
+          }
+        }
 
-      .arrow {
-        display: none;
-      }
+        .arrow {
+          display: none;
+        }
 
-      .requirements-list {
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 1em;
-          margin-left: 1.5em;
-          font-weight: 600;
+        .requirements-list {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin-left: 1.5em;
+            font-weight: 600;
 
-          li::marker {
-            color: rgb(99 122 58);
-            font-size: 1.5em;
+            li::marker {
+              color: black;
+              font-size: 1.5em;
+            }
           }
         }
       }
@@ -89,56 +99,58 @@ const requirementsList = REQUIREMENTS.list;
   //DESKTOP
   @media (min-width: 920px) {
     .requirements-section {
-      margin: auto;
-      width: 90%;
-      gap: 2em;
-      padding: 4em;
-      border-radius: 20px;
-      background-color: white;
-
-      .requirements-title {
-        gap: 1.2em;
+      .requirements-content {
+        margin: auto;
         width: 100%;
-        display: grid;
-        place-items: center;
-      }
+        gap: 2em;
+        padding: 0 4em;
 
-      .content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2em 0;
-        gap: 3em;
-        .requirements-indications {
-          display: flex;
-          flex-direction: column;
-          gap: 3em;
-          width: 45%;
-          padding-left: 2.5em;
-
-          .requirements-description {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5em;
-            margin-left: 5em;
+        .requirements-title {
+          gap: 1.2em;
+          width: 100%;
+          display: grid;
+          place-items: center;
+          h2 {
+            font-size: 2.3em;
           }
         }
 
-        .requirements-list {
-          width: 45%;
+        .content {
           display: flex;
+          justify-content: center;
           align-items: center;
-          ul {
+          padding: 2em 0;
+          .requirements-indications {
             display: flex;
             flex-direction: column;
-            gap: 1.2em;
-            font-size: 1.1em;
-            font-weight: 600;
+            gap: 3em;
+            width: 45%;
+            padding-left: 1em;
 
-            li::marker {
-              color: #4f6228;
-              font-size: 1.2em;
+            .requirements-description {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 1.5em;
+              margin-left: 5em;
+            }
+          }
+
+          .requirements-list {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 1.2em;
+              font-size: 1.1em;
+              font-weight: 600;
+
+              li::marker {
+                color: black;
+                font-size: 1.2em;
+              }
             }
           }
         }

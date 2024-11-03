@@ -5,75 +5,83 @@ const benefistList = BENEFITS.list;
 ---
 
 <section class="benefits-section" id="beneficios">
-  <div class="benefits-title">
-    <h2>{BENEFITS.title}</h2>
-  </div>
-  <div class="benefits-description">
-    <p>{BENEFITS.description}</p>
-  </div>
-  {
-    benefistList.map((benefits) => (
-      <div class="benefits-list">
-        <div class="benefits-img">
-          <img alt="Benefit1" src={benefits.imgUrl} />
+  <div class="benefits-content">
+    <div class="benefits-title">
+      <h2>{BENEFITS.title}</h2>
+    </div>
+    <div class="benefits-description">
+      <p>{BENEFITS.description}</p>
+    </div>
+    {
+      benefistList.map((benefits) => (
+        <div class="benefits-list">
+          <div class="benefits-img">
+            <img alt="Benefit1" src={benefits.imgUrl} />
+          </div>
+          <div class="benefits-items">
+            <ul>
+              {benefits.items.map((item) => (
+                <li>{item.description}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div class="benefits-items">
-          <ul>
-            {benefits.items.map((item) => (
-              <li>{item.description}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </section>
 
 <style lang="scss">
   //MOBILE AND TABLET
   .benefits-section {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2em;
-    font-weight: 500;
-    .benefits-title {
-      text-transform: uppercase;
-      font-size: 1.4em;
-    }
-    .benefits-description {
-      font-size: 0.95em;
-    }
-    .benefits-list {
+    width: 100%;
+    padding: 4em 0;
+    display: grid;
+    place-items: center;
+    .benefits-content {
+      width: 90%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 1.2em;
-      overflow: hidden;
-      margin: 1em 0;
-      .benefits-img {
-        display: flex;
-        justify-content: center;
-        img {
-          max-width: 30em;
-          width: 100%;
-          height: auto;
-          transition: transform 0.3s ease;
-        }
-        img:hover {
-          transform: scale(1.1);
-        }
+      font-weight: 500;
+      .benefits-title {
+        text-transform: uppercase;
+        font-size: 1.4em;
       }
-      .benefits-items {
-        ul {
+      .benefits-description {
+        font-size: 0.95em;
+      }
+      .benefits-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        overflow: hidden;
+        margin: 1em 0;
+        .benefits-img {
           display: flex;
-          flex-direction: column;
-          margin-left: 2em;
-          gap: 0.6em;
+          justify-content: center;
+          img {
+            max-width: 30em;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+          }
+          img:hover {
+            transform: scale(1.1);
+          }
+        }
+        .benefits-items {
+          ul {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2em;
+            gap: 0.6em;
 
-          li::marker {
-            color: rgb(99 122 58);
-            font-size: 1.5em;
+            li::marker {
+              color: rgb(99 122 58);
+              font-size: 1.5em;
+            }
           }
         }
       }
@@ -82,48 +90,53 @@ const benefistList = BENEFITS.list;
   //DESKTOP
   @media (min-width: 920px) {
     .benefits-section {
-      margin: auto;
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      gap: 2.5em;
-      align-items: center;
-      padding: 4em;
-      font-weight: 500;
-
-      .benefits-title {
-        text-transform: uppercase;
-        font-size: 1.6em;
-      }
-
-      .benefits-description {
-        font-size: 1.2em;
-        font-weight: 400;
-      }
-
-      .benefits-list {
+      width: 100%;
+      .benefits-content {
+        margin: auto;
+        width: 80%;
         display: flex;
-        gap: 4em;
+        flex-direction: column;
+        gap: 2.5em;
+        align-items: center;
+        font-weight: 500;
 
-        img {
-          width: 100%;
-          max-width: 30em;
+        .benefits-title {
+          text-transform: uppercase;
+          font-size: 1.6em;
         }
 
-        .benefits-items {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          ul {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2em;
-            font-size: 1.1em;
-            font-weight: 600;
+        .benefits-description {
+          font-size: 1.2em;
+          font-weight: 400;
+        }
 
-            li::marker {
-              color: rgb(99 122 58);
-              font-size: 1.5em;
+        .benefits-list {
+          display: flex;
+          flex-direction: initial;
+          gap: 1.5em;
+
+          .benefits-img {
+            img {
+              width: 25em;
+              height: 15em;
+            }
+          }
+
+          .benefits-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5em;
+              font-size: 1.1em;
+              font-weight: 600;
+
+              li::marker {
+                color: rgb(99 122 58);
+                font-size: 1.5em;
+              }
             }
           }
         }

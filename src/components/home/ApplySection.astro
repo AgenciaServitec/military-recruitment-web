@@ -21,10 +21,13 @@ const { POSTULATION } = LT_BODY;
 
 <style>
   .apply {
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
     button {
       padding: 2em;
       text-transform: uppercase;
-      font-size: 1.3em;
+      font-size: 1em;
       font-weight: 800;
       background: green;
       color: white;
@@ -33,10 +36,10 @@ const { POSTULATION } = LT_BODY;
       cursor: pointer;
     }
   }
-  @media (max-width: 920px) {
+  @media (min-width: 920px) {
     .apply {
       button {
-        font-size: 1em;
+        font-size: 1.3em;
       }
     }
   }
