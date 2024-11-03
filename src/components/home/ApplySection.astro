@@ -1,15 +1,13 @@
 ---
-import { LT_BODY } from "../../data-list/LT_BODY";
 import ButtonApply from "../ui/ButtonApply.astro";
-const { POSTULATION } = LT_BODY;
 ---
 
-<section class="apply">
-  <ButtonApply />
+<section class="apply-button-section">
+  <ButtonApply btnId="apply-button-apply-section" />
 </section>
 
 <style lang="scss">
-  .apply {
+  .apply-button-section {
     display: flex;
     justify-content: center;
     padding: 4em 0;

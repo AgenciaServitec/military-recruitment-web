@@ -3,20 +3,21 @@ import { LT_BODY } from "../../data-list/LT_BODY";
 const { POSTULATION } = LT_BODY;
 ---
 
-<span class="apply" id="apply-button">
+<span class="apply">
   <button class="text-button">{POSTULATION.title}</button>
 </span>
 
 <script>
-  const applyMilitaryService = () =>
-    window.open(
-      "https://korekenke.mil.pe/military-service-recruitment/new",
-      "_blank",
-    );
+  const btnApply = document.querySelectorAll(".apply");
 
-  const applyButtonElement = document.querySelector("#apply-button");
-
-  applyButtonElement.addEventListener("click", () => applyMilitaryService());
+  btnApply.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      window.open(
+        "https://korekenke.mil.pe/military-service-recruitment/new",
+        "_blank",
+      );
+    }),
+  );
 </script>
 
 <style lang="scss">

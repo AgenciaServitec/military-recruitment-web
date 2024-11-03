@@ -5,7 +5,6 @@ import { SectionWrapper, CarouselMain } from "../components";
 import ApplySection from "../components/home/ApplySection.astro";
 import Benefits from "../components/home/Benefits.astro";
 import Requirements from "../components/home/Requirements.astro";
-import Button from "../components/ui/ButtonApply.astro";
 import ButtonApply from "../components/ui/ButtonApply.astro";
 
 const { BODY } = LT_SETTINGS;
@@ -49,7 +48,7 @@ const { BODY } = LT_SETTINGS;
       </SectionWrapper>
 
       <SectionWrapper>
-        <ApplySection />
+        <ApplySection client:load />
       </SectionWrapper>
     </div>
   </main>
