@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const {
+  variant = 'btn-primary',
+  target,
+  text = Astro.slots.render('default'),
+  icon = '',
+  class: className = '',
+  type,
+  btnHref,
+  btnVariant,
+  btnText,
+  btnIcon,
+  ...rest
+} = Astro.props;
+
+const variants = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  tertiary: 'btn btn-tertiary',
+  link: 'cursor-pointer hover:text-primary',
+};
+---
+
+<button type={type} class={`${className} ${variant}`} {...rest}>
+  <a href={btnHref}>
+    <Fragment set:html={btnText} />
+    {btnIcon && <Icon name={btnIcon} class="w-5 h-5 ml-1 -mr-1.5 rtl:mr-1 rtl:-ml-1.5 inline-block" />}
+  </a>
+</button>
