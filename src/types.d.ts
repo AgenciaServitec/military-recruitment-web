@@ -139,6 +139,7 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  urlImg?: string;
 }
 
 export interface Price {
@@ -214,9 +215,11 @@ export interface Form {
 
 // WIDGETS
 export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' | 'classes'> {
+  btnVariant?: string;
+  btnText?: string;
+  btnHref?: string;
+  btnIcon?: string;
   content?: string;
-  actions?: string | CallToAction[];
-  image?: string | unknown;
 }
 
 export interface Team extends Omit<Headline, 'classes'>, Widget {
@@ -241,7 +244,7 @@ export interface Brands extends Omit<Headline, 'classes'>, Widget {
   images?: Array<Image>;
 }
 
-export interface Features extends Omit<Headline, 'classes'>, Widget {
+export interface benefits extends Omit<Headline, 'classes'>, Widget {
   image?: string | unknown;
   video?: Video;
   items?: Array<Item>;
