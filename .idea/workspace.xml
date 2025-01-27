@@ -6,9 +6,88 @@
   <component name="ChangeListManager">
     <list default="true" id="64ba0a0d-0592-4c7f-a77d-6e09489b3a7d" name="Changes" comment="new landing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/_@astrojs-ssr-adapter.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/_noop-middleware.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/Layout_CRYEgdM7.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/_@astrojs-ssr-adapter_CvSoi7hX.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/_astro_assets_CNjfFFFx.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/_astro_data-layer-content_CPVgk76g.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/army_DbPSELzz.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/astro/server_Z5exMJzc.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/britanico_CbHwmrvp.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/conservatorioLima_C2_Ttm8e.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/consts_CJVA2lEV.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/content-assets_DleWbedO.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/content-modules_Dz-S_Wwv.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/footloose_BIaraEM9.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/interbank_CI7W32mC.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/logoEjercito_CrGMGlQf.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/oltursa_BTUDeEXQ.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/others_B3cf3rhu.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/permalinks_TesD2X4Z.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/rimac_BaQXjhPZ.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/sanitas_EjCirmJJ.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/sharp_Cq9aIU8Y.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/chunks/upc_0UIMIssR.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/entry.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/manifest_itv8m1om.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/pages/404.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/pages/_image.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/pages/index.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/pages/rss.xml.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/build/renderers.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/_noop-middleware.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/Layout_CRYEgdM7.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/_@astrojs-ssr-adapter_CvSoi7hX.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/_astro_assets_CNjfFFFx.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/_astro_data-layer-content_CPVgk76g.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/army_DbPSELzz.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/astro/server_Z5exMJzc.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/britanico_CbHwmrvp.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/conservatorioLima_C2_Ttm8e.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/consts_CJVA2lEV.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/content-assets_DleWbedO.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/content-modules_Dz-S_Wwv.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/footloose_BIaraEM9.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/interbank_CI7W32mC.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/logoEjercito_CrGMGlQf.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/oltursa_BTUDeEXQ.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/others_B3cf3rhu.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/permalinks_TesD2X4Z.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/rimac_BaQXjhPZ.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/sanitas_EjCirmJJ.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/sharp_Cq9aIU8Y.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/chunks/upc_0UIMIssR.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/entry.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/manifest_itv8m1om.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/pages/404.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/pages/_image.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/pages/index.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/pages/rss.xml.astro.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/.netlify/build/renderers.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/src/pages/404.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/src/pages/index.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/v1/functions/ssr/ssr.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicons/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicons/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/favicons/servitec.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicons/servitec.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/army.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/army.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/britanico.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/britanico.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/conservatorioLima.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/conservatorioLima.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/footloose.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/footloose.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/interbank.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/interbank.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logoEjercito.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/logoEjercito.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/oltursa.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/oltursa.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/others.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/others.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/rimac.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/rimac.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/sanitas.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/sanitas.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/upc.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/upc.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/styles/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Favicons.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favicons.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/widgets/Logo.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Logo.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +135,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -74,6 +154,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="SharedIndexes">
