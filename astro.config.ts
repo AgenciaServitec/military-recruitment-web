@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
+import netlify from '@astrojs/netlify';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
@@ -23,7 +24,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  output: 'static',
+  output: 'server',
 
   integrations: [
     tailwind({
@@ -72,7 +73,7 @@ export default defineConfig({
       config: './src/config.yaml',
     }),
   ],
-
+  adapter: netlify(),
   image: {
     domains: ['cdn.pixabay.com'],
   },

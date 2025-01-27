@@ -1,0 +1,223 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Benefits from '../components/widgets/Benefits.astro';
+import Agreements from '../components/widgets/Agreements.astro';
+import Content from '~/components/widgets/Content.astro';
+import Contact from '../components/widgets/Contact.astro';
+
+const metadata = {
+  title: 'Servicio de Reclutamiento Militar',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero btnVariant="btn-primary" btnIcon="tabler:arrow-badge-down" btnText="Regístrate aquí" btnHref="#contact">
+    <Fragment slot="bg"
+      ><img src="/src/assets/images/army.webp" alt="army p" class="w-full h-full object-cover" /></Fragment
+    >
+    <Fragment slot="title"> Servicio de Reclutamiento Militar </Fragment>
+    <Fragment slot="subtitle">
+      Únete al servicio militar y fortalece el futuro del Perú.
+      <br />
+      Sirve a tu país, marca la DIFERENCIA.
+    </Fragment>
+  </Hero>
+
+  <!-- Benefits Widget *************** -->
+
+  <Benefits
+    id="benefits"
+    tagline="Beneficios"
+    title="¿Qué te ofrece el Servicio Militar?"
+    subtitle="Estos son todos los beneficios con los que contarás al ser seleccionado para cumplir con el Servicio Militar para el Ejército del Perú."
+    items={[
+      {
+        title: 'Alimentación Completa',
+        description: 'Se te brindará alimentación tres veces al día, priorizando una comida balanceada.',
+        icon: 'ic:twotone-food-bank',
+      },
+      {
+        title: 'Dotación de Prendas',
+        description: 'Te brindaremos conjuntos de prendas desde el primer día de tu ingreso.',
+        icon: 'tabler:shirt',
+      },
+      {
+        title: 'Remuneración Mensual',
+        description: 'Te corresponderá una remuneración económica, viáticos por comisión de servicio y seguro de vida.',
+        icon: 'tabler:report-money',
+      },
+      {
+        title: 'Servicios de Salud',
+        description: 'Tendrás acceso a servicios de salud en los hospitales o establecimientos más cercanos.',
+        icon: 'tabler:health-recognition',
+      },
+      {
+        title: 'Instrucción y Educación',
+        description: 'Te adentrarás en el rubro militar, además de brindarte educación técnica productiva.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Facilidades de Postulación',
+        description: 'Tendrás más oportunidades para el ingreso a las Fuerzas Armadas y/o a la Marina.',
+        icon: 'tabler:file-spreadsheet',
+      },
+      {
+        title: 'Descuentos en Establecimientos',
+        description: 'Rebajas de hasta el 50% para museos, eventos deportivos, eventos culturales, entre otros.',
+        icon: 'tabler:rosette-discount',
+      },
+      {
+        title: 'Oportunidades de Estudio',
+        description: 'Convenio con el programa Beca 18 para estudios universitarios o técnicos.',
+        icon: 'tabler:pencil-star',
+      },
+    ]}
+  />
+
+  <Content
+    id="requirements"
+    isReversed
+    tagline="Requerimientos"
+    title="¿Qué necesitas para postular?"
+    items={[
+      {
+        title: 'Tener entre 18 y 30 años de edad.',
+        description:
+          'Para poder ingresar al Servicio Militar debes ser mayor de edad, además de no superar los 30 años.',
+      },
+      {
+        title: 'Presentar DNI original y copia.',
+        description: 'Debes acercarte a tu centro de postulación con tu DNI original y copia en Blanco y Negro.',
+      },
+      {
+        title: 'Libreta Militar.',
+        description: 'Debes de contar con una constancia de Inscripción o Libreta Militar.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1539538507524-eab6a4184604?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Requerimientos Básicos</h3>
+      Lee atentamente y asegúrate de cumpler con estos requisitos antes de postular:
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Contar con Estudios Completos',
+        description:
+          'Debes de haber culminado tu educación primaria y secundaria como requisito mínimo para seguir en el proceso.',
+      },
+      {
+        title: 'Declaración Jurada de Soltería',
+        description:
+          'Para el Servicio Militar se requieren jóvenes con un compromiso total al Ejército del Perú, por ello se requiere que estén solteros.',
+      },
+      {
+        title: 'Declaración Jurada de Voluntad',
+        description:
+          'Debe firmar un acuerdo en el cuál, el mismo postulante por voluntad propia está postulando para servir a su patria.',
+      },
+      {
+        title: 'Antecedentes Policiales',
+        description:
+          'Debe encontrarse sin antecentedes policiales, o al menos no contar con antecedentes perjudiciales.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1586015254879-9de0d7a69e71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Soldier Image',
+    }}
+  >
+    <Fragment slot="content">Certificados y Constancias</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Agreements
+    id="agreements"
+    title="Nuestras Alianzas con Instituciones"
+    subtitle="Contamos con múltiples convenios, entre universidades, bancos y otras instituciones."
+    tagline="Convenios"
+    items={[
+      {
+        title: 'UPC',
+        description:
+          'Nos aliamos con la Universidad Peruana de Ciencias Aplicadas para ofrecerte descuentos en carreras de Pre Grado',
+        urlImg: '/src/assets/images/upc.webp',
+      },
+      {
+        title: 'Interbank',
+        description: 'Ofrecemos facilidades para todo tipo de préstamos, además de beneficios en todo tipo de cuentas.',
+        urlImg: '/src/assets/images/interbank.webp',
+      },
+      {
+        title: 'Británico',
+        description:
+          'El Inglés es fundamental, y por eso, el Británico te brinda facilidades en sus pensiones y matrícula.',
+        urlImg: '/src/assets/images/britanico.webp',
+      },
+      {
+        title: 'Conservatorio de Lima',
+        description: 'Para los apasionados del arte, aquí tendrás descuentos en carreras musicales y artísticas.',
+        urlImg: '/src/assets/images/conservatorioLima.webp',
+      },
+      {
+        title: 'Sanitas',
+        description: 'Se te brindarán tarifas preferenciales y descuentos por encontrarse registrado en planilla.',
+        urlImg: '/src/assets/images/sanitas.webp',
+      },
+      {
+        title: 'Rimac',
+        description:
+          'Al estar en planilla accedes a seguros de Protección Familiar, Sepelio, Vehicular, Oncológico Indemnizatorio, etc.',
+        urlImg: '/src/assets/images/rimac.webp',
+      },
+      {
+        title: 'FootLoose',
+        description:
+          'Descuentos variados en productos de calzado, tanto en marcas propias como marcas internacionales.',
+        urlImg: '/src/assets/images/footloose.webp',
+      },
+      {
+        title: 'Oltursa',
+        description:
+          'Para las vacaciones, Oltursa ofrece descuentos en el servicio de trasnporte interprovincial que varía según temporadas.',
+        urlImg: '/src/assets/images/oltursa.webp',
+      },
+      {
+        title: 'Entre Otros',
+        description:
+          'Contamos con más convenios en los distintos rubros, solo visita nuestra página de Convenios y Alianzas.',
+        urlImg: '/src/assets/images/others.png',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Agreements>
+
+  <iframe
+    id="contact"
+    src="https://korekenke.mil.pe/military-service-recruitment/new"
+    style={{ width: '100%', minHeight: '54rem', border: 'none', paddingTop: '8em' }}></iframe>
+</Layout>

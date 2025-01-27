@@ -5,95 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64ba0a0d-0592-4c7f-a77d-6e09489b3a7d" name="Changes" comment="new landing">
-      <change afterPath="$PROJECT_DIR$/src/components/contact/ContactForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/contact/ContactForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Logo.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicons/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/favicons/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicons/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/favicons/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/app-store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/google-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/hero-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomStyles.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomStyles.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Favicons.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favicons.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/Grid.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/GridItem.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/List.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/ListItem.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/Pagination.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/RelatedPosts.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/SinglePost.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/Tags.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/ToBlogLink.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/SocialShare.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/SplitbeeAnalytics.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Button.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Button.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DListItem.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Form.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/ItemGrid2.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ItemGrid2.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Timeline.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Announcement.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/BlogHighlightedPosts.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/BlogLatestPosts.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Brands.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/CallToAction.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Contact.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Contact.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Content.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Content.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/FAQs.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Features.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Benefits.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Features2.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Agreements.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Features3.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Footer.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Header.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Hero.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Hero2.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/HeroText.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Note.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Pricing.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Stats.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Steps.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Steps2.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/Testimonials.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/post/astrowind-template-in-depth.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/post/get-started-website-with-astro-tailwind-css.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/post/how-to-customize-astrowind-to-your-brand.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/post/landing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/post/markdown-elements-demo-post.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/post/useful-resources-to-create-websites.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LandingLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/LandingLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MarkdownLayout.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/PageLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/PageLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/[...blog]/[...page].astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/[...blog]/[category]/[...page].astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/[...blog]/[tag]/[...page].astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/[...blog]/index.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homes/mobile-app.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homes/personal.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homes/saas.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homes/startup.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/click-through.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/lead-generation.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/pre-launch.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/product.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/sales.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/subscription.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/pricing.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/privacy.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/services.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/terms.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,23 +54,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;improve-landing&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pabloaquise/Desktop/AGENCIA SERVITEC/military-recruitment-web&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/pabloaquise/Desktop/AGENCIA SERVITEC/military-recruitment-web/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/pabloaquise/Desktop/AGENCIA SERVITEC/military-recruitment-web/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/pabloaquise/Desktop/AGENCIA SERVITEC/military-recruitment-web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/pabloaquise/Desktop/AGENCIA SERVITEC/military-recruitment-web/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/pabloaquise/Desktop/AGENCIA SERVITEC/military-recruitment-web/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
