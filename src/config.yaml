@@ -11,14 +11,14 @@ metadata:
   title:
     default: Servicio de Reclutamiento Militar
     template: '%s — Servicio de Reclutamiento Militar'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Sitio Web para Registros en el Servicio Militar del Ejército del Perú"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Servicio de Reclutamiento Militar
     images:
-      - url: '~/assets/images/army.webp'
+      - url: '/assets/images/banner.jpg'
         width: 1200
         height: 628
     type: website
